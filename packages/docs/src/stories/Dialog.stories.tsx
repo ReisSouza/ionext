@@ -1,33 +1,24 @@
-import type { ComponentStory, Meta } from '@storybook/react';
-import { Dialog, DialogProps, Button, Box, TextField } from '@ionext/react';
+import type { ComponentStory, Meta } from '@storybook/react'
+
+import {
+  Dialog,
+  DialogProps,
+  Button,
+  Box,
+  TextField,
+  DialogCLose,
+} from '@ionext/core'
 
 export default {
   title: 'Display/Dialog',
   component: Dialog,
-  args: {
-    trigger: <Button>Open Dialog</Button>,
-    title: 'Fazer login',
-    description: 'Faça login e aproveite o melhor da plataforma',
-    content: (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-        <TextField label="Email" />
-        <TextField label="Password" />
-      </div>
-    ),
-    footer: [
-      <Button variant="outlined" key={1}>
-        Cancela
-      </Button>,
-      <Button key={2}>Login</Button>,
-    ],
-  },
   decorators: [
     (Story) => {
       return (
-        <Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
+        <Box as="label" css={{ display: 'flex', justifyContent: 'center' }}>
           {Story()}
         </Box>
-      );
+      )
     },
   ],
 
@@ -38,7 +29,30 @@ export default {
     description: { control: { type: 'string' } },
     trigger: { control: { type: 'jsx.element' } },
   },
-} as Meta<DialogProps>;
+} as Meta<DialogProps>
 
-const Template: ComponentStory<typeof Dialog> = (args) => <Dialog {...args} />;
-export const Default = Template.bind({});
+const Template: ComponentStory<typeof Dialog> = (args) => {
+  return (
+    <Dialog
+      {...args}
+      modal
+      onOpenChange={() => {}}
+      title="Fazer login"
+      description="Faça login e aproveite o melhor da plataforma"
+      content={
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <TextField label="Email" />
+          <TextField label="Password" />
+        </div>
+      }
+      footer={[
+        <DialogCLose asChild key={1}>
+          <Button variant="outlined">Cancela</Button>
+        </DialogCLose>,
+        <Button key={2}>Login</Button>,
+      ]}
+      trigger={<Button>Open Dialog</Button>}
+    />
+  )
+}
+export const Default = Template.bind({})

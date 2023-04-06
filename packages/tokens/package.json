@@ -1,6 +1,6 @@
 {
   "name": "@ionext/tokens",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -8,8 +8,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "lint": "eslint src/**/*.ts* --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
   "author": "",

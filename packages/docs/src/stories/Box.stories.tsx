@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@ionext/react';
+import { Box, BoxProps, Text } from '@ionext/core';
 import type { Meta, StoryObj } from '@storybook/react';
 
 export default {

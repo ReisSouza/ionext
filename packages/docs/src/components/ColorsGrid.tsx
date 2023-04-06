@@ -1,4 +1,4 @@
-import { Toast, ToastProvider } from '@ionext/react';
+import { Toast, ToastProvider } from '@ionext/core';
 import { colors } from '@ionext/tokens';
 
 import { getContrast } from 'polished';

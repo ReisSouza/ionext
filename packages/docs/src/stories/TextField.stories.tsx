@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Box, TextField, TextFieldProps } from '@ionext/react';
+import { Box, TextField, TextFieldProps } from '@ionext/core';
 import { iconList } from 'icomoon-react';
 import iconSet from '../../src/assets/icons.json';
 

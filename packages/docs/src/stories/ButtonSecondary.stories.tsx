@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from '@ionext/react';
+import { Button, ButtonProps } from '@ionext/core';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { iconList } from 'icomoon-react';

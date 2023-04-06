@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Box, Text, Checkbox, CheckboxProps } from '@ionext/react';
+import { Box, Text, Checkbox, CheckboxProps } from '@ionext/core';
 
 export default {
   title: 'Form/Checkbox',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { themes } from '@storybook/theming';
-import { ToastProvider } from '@ionext/react';
+import { ToastProvider } from '@ionext/core';
 
 export const decorators = [(Story) => <ToastProvider>{Story()}</ToastProvider>];
 

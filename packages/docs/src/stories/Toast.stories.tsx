@@ -1,5 +1,5 @@
 import type { Meta, Story } from '@storybook/react';
-import { Box, Button, Toast, ToastProps } from '@ionext/react';
+import { Box, Button, Toast, ToastProps } from '@ionext/core';
 import { useState } from 'react';
 
 const renderToast = {

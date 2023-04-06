@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Tooltip, TooltipProps, Button, Text } from '@ionext/react';
+import { Tooltip, TooltipProps, Button, Text } from '@ionext/core';
 
 export default {
   title: 'Display/Tooltip',

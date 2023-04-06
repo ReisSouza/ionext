@@ -6,6 +6,14 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import * as S from './styles'
 import { CSS } from '@/types/css'
 
+type DialogCloseProps = DialogPrimitive.DialogCloseProps
+
+export const DialogCLose = ({ ...rest }: DialogCloseProps) => {
+  return (
+    <DialogPrimitive.Close {...rest}>{rest.children}</DialogPrimitive.Close>
+  )
+}
+
 export type DialogProps = ComponentProps<typeof DialogPrimitive.Root> & {
   trigger: React.ReactNode
   description: string

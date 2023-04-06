@@ -1,5 +1,11 @@
 # @ionext/tokens
 
+## 0.2.0
+
+### Minor Changes
+
+- rename folder and adjust eslint
+
 ## 0.1.0
 
 ### Minor Changes
