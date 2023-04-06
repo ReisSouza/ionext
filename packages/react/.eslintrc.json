@@ -1,0 +1,3 @@
+{
+    "extends":"@ionext/eslint-config"
+}  
