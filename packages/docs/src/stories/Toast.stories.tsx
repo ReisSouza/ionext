@@ -1,27 +1,24 @@
-import type { Meta, Story } from '@storybook/react'
-import { Box, Button, Toast, ToastProps } from '@ionext/react'
-import { useState } from 'react'
+import type { Meta, Story } from '@storybook/react';
+import { Box, Button, Toast, ToastProps } from '@ionext/react';
+import { useState } from 'react';
 
 const renderToast = {
   danger: {
     variant: 'danger',
     title: 'Conta deletada com sucesso.',
-    description:
-      'Sua conta foi deletada com sucesso, não sera mais possível acessa as informações dessa conta!',
+    description: 'Sua conta foi deletada com sucesso, não sera mais possível acessa as informações dessa conta!',
   },
   success: {
     variant: 'success',
     title: 'Conta criada com sucesso.',
-    description:
-      'Sua conta foi criado com sucesso, para mais informações acesse seu email!',
+    description: 'Sua conta foi criado com sucesso, para mais informações acesse seu email!',
   },
   warning: {
     variant: 'warning',
     title: 'Alertar ',
-    description:
-      'Para deletar sua conta e preciso que não haja vinculo com consultas futuras',
+    description: 'Para deletar sua conta e preciso que não haja vinculo com consultas futuras',
   },
-}
+};
 export default {
   title: 'Display/Toast',
   component: Toast,
@@ -51,12 +48,12 @@ export default {
         >
           {Story()}
         </Box>
-      )
+      );
     },
   ],
-} as Meta<ToastProps>
+} as Meta<ToastProps>;
 const TemplateSuccess: Story<ToastProps> = (args) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Toast
@@ -72,13 +69,13 @@ const TemplateSuccess: Story<ToastProps> = (args) => {
         teste
       </Button>
     </>
-  )
-}
-export const Success: Story<ToastProps> = TemplateSuccess.bind({})
-Success.args = {}
+  );
+};
+export const Success: Story<ToastProps> = TemplateSuccess.bind({});
+Success.args = {};
 
 const TemplateDanger: Story<ToastProps> = (args) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Toast
@@ -94,13 +91,13 @@ const TemplateDanger: Story<ToastProps> = (args) => {
         teste
       </Button>
     </>
-  )
-}
-export const Danger: Story<ToastProps> = TemplateDanger.bind({})
-Danger.args = {}
+  );
+};
+export const Danger: Story<ToastProps> = TemplateDanger.bind({});
+Danger.args = {};
 
 const TemplateWarning: Story<ToastProps> = (args) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Toast
@@ -116,20 +113,20 @@ const TemplateWarning: Story<ToastProps> = (args) => {
         teste
       </Button>
     </>
-  )
-}
-export const Warning: Story<ToastProps> = TemplateWarning.bind({})
-Warning.args = {}
+  );
+};
+export const Warning: Story<ToastProps> = TemplateWarning.bind({});
+Warning.args = {};
 
 const TemplatePilha: Story<ToastProps> = (args) => {
   const [listOfToast, setListOfToast] = useState<
     {
-      title: string
-      description: string
-      variant: string
-      id: number
+      title: string;
+      description: string;
+      variant: string;
+      id: number;
     }[]
-  >([])
+  >([]);
   return (
     <>
       {listOfToast.map((tostItem) => {
@@ -141,7 +138,7 @@ const TemplatePilha: Story<ToastProps> = (args) => {
             title={tostItem.title + tostItem.id}
             description={tostItem.description}
           />
-        )
+        );
       })}
       <Button
         onClick={() =>
@@ -152,7 +149,7 @@ const TemplatePilha: Story<ToastProps> = (args) => {
                 ...renderToast.success,
                 id: prevState.length + 1,
               },
-            ]
+            ];
           })
         }
         color="success"
@@ -168,7 +165,7 @@ const TemplatePilha: Story<ToastProps> = (args) => {
                 ...renderToast.danger,
                 id: prevState.length + 1,
               },
-            ]
+            ];
           })
         }
         color="danger"
@@ -184,7 +181,7 @@ const TemplatePilha: Story<ToastProps> = (args) => {
                 ...renderToast.warning,
                 id: prevState.length + 1,
               },
-            ]
+            ];
           })
         }
         color="secondary"
@@ -192,7 +189,7 @@ const TemplatePilha: Story<ToastProps> = (args) => {
         Delete
       </Button>
     </>
-  )
-}
-export const Empilhamento: Story<ToastProps> = TemplatePilha.bind({})
-Empilhamento.args = {}
+  );
+};
+export const Empilhamento: Story<ToastProps> = TemplatePilha.bind({});
+Empilhamento.args = {};

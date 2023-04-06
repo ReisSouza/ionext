@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Tooltip, TooltipProps, Button, Text } from '@ionext/react'
+import type { Meta, StoryObj } from '@storybook/react';
+import { Tooltip, TooltipProps, Button, Text } from '@ionext/react';
 
 export default {
   title: 'Display/Tooltip',
@@ -24,6 +24,6 @@ export default {
     open: { control: { type: 'boolean' } },
     defaultOpen: { control: { type: 'boolean' } },
   },
-} as Meta<TooltipProps>
+} as Meta<TooltipProps>;
 
-export const Default: StoryObj<TooltipProps> = {}
+export const Default: StoryObj<TooltipProps> = {};

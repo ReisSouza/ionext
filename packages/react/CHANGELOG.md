@@ -1,5 +1,11 @@
 # @ionext/react
 
+## 0.1.0
+
+### Minor Changes
+
+- first publish
+
 ## 3.2.1
 
 ### Patch Changes

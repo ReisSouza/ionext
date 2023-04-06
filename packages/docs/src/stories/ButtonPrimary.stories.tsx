@@ -1,10 +1,10 @@
-import { Button, ButtonProps } from '@ionext/react'
-import type { Meta, StoryObj } from '@storybook/react'
+import { Button, ButtonProps } from '@ionext/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
-import { iconList } from 'icomoon-react'
-import iconSet from '../../src/assets/icons.json'
+import { iconList } from 'icomoon-react';
+import iconSet from '../../src/assets/icons.json';
 
-const icons = iconList(iconSet)
+const icons = iconList(iconSet);
 
 export default {
   title: 'Buttons/Primary',
@@ -49,54 +49,54 @@ export default {
       },
     },
   },
-} as Meta<ButtonProps>
+} as Meta<ButtonProps>;
 
-export const Contained: StoryObj<ButtonProps> = {}
+export const Contained: StoryObj<ButtonProps> = {};
 
 export const Outlined: StoryObj<ButtonProps> = {
   args: {
     variant: 'outlined',
   },
-}
+};
 
 export const Text: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',
   },
-}
+};
 export const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'small',
   },
-}
+};
 
 export const Medium: StoryObj<ButtonProps> = {
   args: {
     size: 'medium',
   },
-}
+};
 
 export const Large: StoryObj<ButtonProps> = {
   args: {
     size: 'large',
   },
-}
+};
 
 export const WithIconLeft: StoryObj<ButtonProps> = {
   args: {
     iconLeft: 'files',
   },
-}
+};
 
 export const WithIconRight: StoryObj<ButtonProps> = {
   args: {
     iconRight: 'files',
   },
-}
+};
 
 export const WithIcons: StoryObj<ButtonProps> = {
   args: {
     iconLeft: 'files',
     iconRight: 'files',
   },
-}
+};

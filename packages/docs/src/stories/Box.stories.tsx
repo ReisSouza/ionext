@@ -1,5 +1,5 @@
-import { Box, BoxProps, Text } from '@ionext/react'
-import type { Meta, StoryObj } from '@storybook/react'
+import { Box, BoxProps, Text } from '@ionext/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 export default {
   title: 'Surfaces/Box',
@@ -22,15 +22,15 @@ export default {
     },
     hasBorder: { control: { type: 'boolean' } },
   },
-} as Meta<BoxProps>
+} as Meta<BoxProps>;
 
 export const Primary: StoryObj<BoxProps> = {
   args: {
     variant: 'primary',
   },
-}
+};
 export const Secondary: StoryObj<BoxProps> = {
   args: {
     variant: 'secondary',
   },
-}
+};

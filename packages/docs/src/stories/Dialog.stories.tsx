@@ -1,5 +1,5 @@
-import type { ComponentStory, Meta } from '@storybook/react'
-import { Dialog, DialogProps, Button, Box, TextField } from '@ionext/react'
+import type { ComponentStory, Meta } from '@storybook/react';
+import { Dialog, DialogProps, Button, Box, TextField } from '@ionext/react';
 
 export default {
   title: 'Display/Dialog',
@@ -24,13 +24,10 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-        >
+        <Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
           {Story()}
         </Box>
-      )
+      );
     },
   ],
 
@@ -41,7 +38,7 @@ export default {
     description: { control: { type: 'string' } },
     trigger: { control: { type: 'jsx.element' } },
   },
-} as Meta<DialogProps>
+} as Meta<DialogProps>;
 
-const Template: ComponentStory<typeof Dialog> = (args) => <Dialog {...args} />
-export const Default = Template.bind({})
+const Template: ComponentStory<typeof Dialog> = (args) => <Dialog {...args} />;
+export const Default = Template.bind({});

@@ -1,21 +1,21 @@
-import { Toast, ToastProvider } from '@ionext/react'
-import { colors } from '@ionext/tokens'
+import { Toast, ToastProvider } from '@ionext/react';
+import { colors } from '@ionext/tokens';
 
-import { getContrast } from 'polished'
-import { ReactNode, useState } from 'react'
+import { getContrast } from 'polished';
+import { ReactNode, useState } from 'react';
 
 type ListToastProps = {
-  title: ReactNode
-  description: ReactNode
-  id: number
-}
+  title: ReactNode;
+  description: ReactNode;
+  id: number;
+};
 
 export function ColorsGrid() {
-  const [listToast, setListToast] = useState<ListToastProps[]>([])
+  const [listToast, setListToast] = useState<ListToastProps[]>([]);
 
   async function copyTextToClipboard(text: string) {
     if ('clipboard' in navigator) {
-      await navigator.clipboard.writeText(text)
+      await navigator.clipboard.writeText(text);
       setListToast((prevState) => {
         return [
           ...prevState,
@@ -38,10 +38,10 @@ export function ColorsGrid() {
             ),
             id: prevState.length + 1,
           },
-        ]
-      })
+        ];
+      });
     } else {
-      return document.execCommand('copy', true, text)
+      return document.execCommand('copy', true, text);
     }
   }
   return (
@@ -50,7 +50,7 @@ export function ColorsGrid() {
         return (
           <div
             onClick={() => {
-              copyTextToClipboard(color)
+              copyTextToClipboard(color);
             }}
             key={key}
             style={{ backgroundColor: color, padding: '2rem' }}
@@ -69,18 +69,13 @@ export function ColorsGrid() {
               </div>
             </div>
           </div>
-        )
+        );
       })}
       {listToast.map((toastItem, index) => {
         return (
-          <Toast
-            title={toastItem.title}
-            description={toastItem.description}
-            key={toastItem.id}
-            variant="success"
-          />
-        )
+          <Toast title={toastItem.title} description={toastItem.description} key={toastItem.id} variant="success" />
+        );
       })}
     </ToastProvider>
-  )
+  );
 }

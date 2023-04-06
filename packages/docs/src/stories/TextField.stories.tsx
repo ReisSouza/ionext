@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Box, TextField, TextFieldProps } from '@ionext/react'
-import { iconList } from 'icomoon-react'
-import iconSet from '../../src/assets/icons.json'
+import type { Meta, StoryObj } from '@storybook/react';
+import { Box, TextField, TextFieldProps } from '@ionext/react';
+import { iconList } from 'icomoon-react';
+import iconSet from '../../src/assets/icons.json';
 
-const icons = iconList(iconSet)
+const icons = iconList(iconSet);
 
 export default {
   title: 'Form/Text Field',
@@ -39,32 +39,29 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box
-          as="label"
-          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-        >
+        <Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
           {Story()}
         </Box>
-      )
+      );
     },
   ],
-} as Meta<TextFieldProps>
+} as Meta<TextFieldProps>;
 
 export const Primary: StoryObj<TextFieldProps> = {
   args: {
     placeholder: 'Type your name',
   },
-}
+};
 
 export const Disabled: StoryObj<TextFieldProps> = {
   args: {
     disabled: true,
   },
-}
+};
 
 export const WithIconLeft: StoryObj<TextFieldProps> = {
   args: {
     placeholder: 'Adicionar arquivo',
     iconLeft: 'files',
   },
-}
+};
