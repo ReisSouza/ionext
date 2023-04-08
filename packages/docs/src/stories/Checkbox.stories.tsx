@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Box, Text, Checkbox, CheckboxProps } from '@ionext/core';
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, Text, Checkbox, CheckboxProps } from '@ionext/core'
 
 export default {
   title: 'Form/Checkbox',
@@ -22,9 +22,9 @@ export default {
           {Story()}
           <Text size="sm">Accept terms of use</Text>
         </Box>
-      );
+      )
     },
   ],
-} as Meta<CheckboxProps>;
+} as Meta<CheckboxProps>
 
-export const Primary: StoryObj<CheckboxProps> = {};
+export const Primary: StoryObj<CheckboxProps> = {}

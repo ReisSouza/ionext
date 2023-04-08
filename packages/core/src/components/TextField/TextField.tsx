@@ -26,7 +26,6 @@ export const TextField = forwardRef<ElementRef<typeof S.Input>, TextFieldProps>(
       label,
       hint,
       hasIconHint,
-      variant,
       htmlFor,
       status,
       ...props
@@ -45,7 +44,7 @@ export const TextField = forwardRef<ElementRef<typeof S.Input>, TextFieldProps>(
             {label}
           </S.Label>
         )}
-        <S.WrappedInput variant={variant} size={size}>
+        <S.WrappedInput size={size}>
           {iconLeft && iconLeft}
           <S.Input size={size} id={htmlFor || id} ref={ref} {...props} />
           {iconRight && iconRight}
