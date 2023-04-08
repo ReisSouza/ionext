@@ -1,5 +1,5 @@
 {
-  "name": "@ionext/eslint-config",
+  "name": "@sky-ui/eslint-config",
   "version": "0.0.1",
   "private": false,
   "description": "ESLint configuration used by Rocketseat.",

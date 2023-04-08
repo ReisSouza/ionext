@@ -1,4 +1,4 @@
-# @ionext/eslint-config
+# @sky-ui/eslint-config
 
 ## 2.0.0
 

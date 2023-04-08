@@ -1,3 +1,3 @@
 {
-    "extends":"@ionext/eslint-config"
+    "extends":"@sky-ui/eslint-config"
 }

@@ -1,8 +1,5 @@
 module.exports = {
-  stories: [
-    '../src/pages/**/*.stories.mdx',
-    '../src/stories/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: ['../src/pages/**/*.stories.mdx', '../src/stories/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -19,9 +16,9 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ionext-ui/'
+      config.base = '/sky-ui-ui/';
     }
 
-    return config
+    return config;
   },
-}
+};

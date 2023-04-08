@@ -1,5 +1,5 @@
-import { Toast, ToastProvider } from '@ionext/core';
-import { colors } from '@ionext/tokens';
+import { Toast, ToastProvider } from '@sky-ui/core';
+import { colors } from '@sky-ui/tokens';
 
 import { getContrast } from 'polished';
 import { ReactNode, useState } from 'react';

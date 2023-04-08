@@ -1,4 +1,4 @@
-# @ionext/tokens
+# @sky-ui/tokens
 
 ## 0.3.0
 

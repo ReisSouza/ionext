@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Heading, HeadingProps } from '@ionext/core'
+import { Heading, HeadingProps } from '@sky-ui/core'
 
 export default {
   title: 'Typography/Heading',

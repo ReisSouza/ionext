@@ -8,7 +8,7 @@ import {
   space,
   borderWidths,
   shadows,
-} from '@ionext/tokens'
+} from '@sky-ui/tokens'
 
 export const MainTheme = {
   colors,

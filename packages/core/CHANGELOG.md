@@ -1,4 +1,4 @@
-# @ionext/core
+# @sky-ui/core
 
 ## 1.0.0
 

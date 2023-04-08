@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Avatar, AvatarProps } from '@ionext/core'
+import { Avatar, AvatarProps } from '@sky-ui/core'
 
 export default {
   title: 'Data display/Avatar',

@@ -1,4 +1,4 @@
-# @ionext/ts-config
+# @sky-ui/ts-config
 
 ## 0.3.0
 

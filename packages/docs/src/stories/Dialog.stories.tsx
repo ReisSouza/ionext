@@ -7,7 +7,7 @@ import {
   Box,
   TextField,
   DialogCLose,
-} from '@ionext/core'
+} from '@sky-ui/core'
 
 export default {
   title: 'Display/Dialog',

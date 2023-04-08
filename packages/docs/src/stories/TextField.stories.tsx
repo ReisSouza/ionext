@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, TextField, TextFieldProps } from '@ionext/core'
+import { Box, TextField, TextFieldProps } from '@sky-ui/core'
 
 import { MagnifyingGlass } from '@phosphor-icons/react'
 

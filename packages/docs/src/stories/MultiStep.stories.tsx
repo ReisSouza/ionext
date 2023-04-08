@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, MultiStep, MultiStepProps } from '@ionext/core'
+import { Box, MultiStep, MultiStepProps } from '@sky-ui/core'
 
 export default {
   title: 'Form/Multi Step',

@@ -1,5 +1,5 @@
 {
-  "name": "@ionext/core",
+  "name": "@sky-ui/core",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
@@ -15,9 +15,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ionext/eslint-config": "*",
-    "@ionext/tokens": "*",
-    "@ionext/ts-config": "*",
+    "@sky-ui/eslint-config": "*",
+    "@sky-ui/tokens": "*",
+    "@sky-ui/ts-config": "*",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",

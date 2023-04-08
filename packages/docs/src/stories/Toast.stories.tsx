@@ -1,5 +1,5 @@
 import type { Meta, Story } from '@storybook/react'
-import { Box, Button, Toast, ToastProps } from '@ionext/core'
+import { Box, Button, Toast, ToastProps } from '@sky-ui/core'
 import { useState } from 'react'
 
 const renderToast = {

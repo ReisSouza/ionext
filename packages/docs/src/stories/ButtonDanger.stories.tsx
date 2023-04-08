@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from '@ionext/core'
+import { Button, ButtonProps } from '@sky-ui/core'
 import { Plus, SignIn } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
 

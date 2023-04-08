@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from '@ionext/core'
+import { Text, TextProps } from '@sky-ui/core'
 
 export default {
   title: 'Typography/Text',

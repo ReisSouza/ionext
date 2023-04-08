@@ -1,5 +1,5 @@
 {
-  "name": "@ionext/docs",
+  "name": "@sky-ui/docs",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -29,10 +29,10 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
-    "@ionext/core": "*",
-    "@ionext/eslint-config": "*",
-    "@ionext/tokens": "*",
-    "@ionext/ts-config": "*",
+    "@sky-ui/core": "*",
+    "@sky-ui/eslint-config": "*",
+    "@sky-ui/tokens": "*",
+    "@sky-ui/ts-config": "*",
     "@phosphor-icons/react": "^2.0.8",
     "@storybook/addon-a11y": "^6.5.16",
     "@storybook/addon-backgrounds": "^6.5.16",

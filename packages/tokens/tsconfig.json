@@ -1,4 +1,4 @@
 {
-  "extends":"@ionext/ts-config/base.json",
+  "extends":"@sky-ui/ts-config/base.json",
   "include": ["src"],
 }

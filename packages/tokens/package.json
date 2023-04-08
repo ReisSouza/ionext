@@ -1,5 +1,5 @@
 {
-  "name": "@ionext/tokens",
+  "name": "@sky-ui/tokens",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@ionext/ts-config": "*",
-    "@ionext/eslint-config": "*",
+    "@sky-ui/ts-config": "*",
+    "@sky-ui/eslint-config": "*",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5"
   }

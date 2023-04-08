@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Select, SelectProps } from '@ionext/core'
+import { Box, Select, SelectProps } from '@sky-ui/core'
 
 export default {
   title: 'Form/Select',

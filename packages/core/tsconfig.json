@@ -1,5 +1,5 @@
 {
-  "extends":"@ionext/ts-config/react.json",
+  "extends":"@sky-ui/ts-config/react.json",
   "include": ["src"],
  "compilerOptions": {
   "baseUrl": ".",
