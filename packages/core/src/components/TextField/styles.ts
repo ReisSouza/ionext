@@ -20,10 +20,33 @@ export const WrappedInput = styled('div', {
   gap: '$2',
 
   '& svg': {
-    fill: '$secondary-light-active',
+    fill: '$border',
     '& path': {
-      fill: '$secondary-light-active',
+      fill: '$border',
     },
+  },
+
+  '&:hover': {
+    borderColor: '$secondary-light-active',
+    '& svg': {
+      fill: '$secondary-light-active',
+      '& path': {
+        fill: '$secondary-light-active',
+      },
+    },
+  },
+  '&:has(input:focus)': {
+    borderColor: '$secondary-light-active',
+    '& svg': {
+      fill: '$secondary-light-active',
+      '& path': {
+        fill: '$secondary-light-active',
+      },
+    },
+  },
+  '&:has(input:disabled)': {
+    opacity: 0.5,
+    cursor: 'not-allowed',
   },
   variants: {
     size: {
@@ -49,74 +72,26 @@ export const WrappedInput = styled('div', {
       large: {
         height: '$12',
         padding: '$3 $4',
-        borderRadius: '$2',
+        borderRadius: '$1',
 
         fontSize: '$5',
       },
     },
-    variant: {
-      primary: {
-        borderColor: '$secondary-light-active',
-        '& input::placeholder': {
-          color: '$secondary-light-active',
-        },
-        '& input': {
-          color: '$secondary-normal',
-        },
-        '&:not(input:focus):hover': {
-          borderColor: '$secondary-normal',
-          color: '$secondary-normal',
-
-          '& input::placeholder': {
-            color: '$secondary-normal',
-          },
-
-          '& svg': {
-            fill: '$secondary-hover !important',
-            '& path': {
-              fill: '$secondary-hover !important',
-            },
-          },
-        },
-
-        '&:has(input:focus)': {
-          borderColor: '$secondary-active',
-          '& svg': {
-            fill: '$secondary-active !important',
-          },
-          '&:hover': {
-            borderColor: '$secondary-active !important',
-            '& svg': {
-              fill: '$secondary-active !important',
-              '& path': {
-                fill: '$secondary-active !important',
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-
-  '&:has(input:disabled)': {
-    opacity: 0.5,
-    cursor: 'not-allowed',
   },
 
   defaultVariants: {
     size: 'medium',
-    variant: 'primary',
   },
 })
 
 export const Input = styled('input', {
   fontFamily: '$default',
   color: '$secondary-light-active',
-  // fontWeight: 'regular',
   background: 'transparent',
   border: 0,
   width: '100%',
   height: '100%',
+  fontWeight: '$medium',
 
   '&:focus': {
     outline: 0,
@@ -125,12 +100,14 @@ export const Input = styled('input', {
   '&:disabled': {
     cursor: 'not-allowed',
   },
-  '-webkit-box-shadow': '0 0 0px 1000px #FFF inset',
 
   '&::placeholder': {
     color: '$border',
-    '&:hover': {
-      color: '$secondary-light-hover',
+  },
+
+  '&:hover': {
+    '&::placeholder': {
+      color: '$secondary-light-active',
     },
   },
 
@@ -140,10 +117,10 @@ export const Input = styled('input', {
         fontSize: '$sm',
       },
       medium: {
-        fontSize: '$md',
+        fontSize: '$sm',
       },
       large: {
-        fontSize: '$lg',
+        fontSize: '$md',
       },
     },
   },
@@ -157,7 +134,7 @@ export const Hint = styled('span', {
 })
 
 export const Label = styled(LabelPrimitive.Root, {
-  color: '$secondary-normal',
+  color: '$secondary-light-active',
   variants: {
     size: {
       small: {
