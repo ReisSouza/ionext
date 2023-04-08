@@ -1,5 +1,11 @@
 # @ionext/core
 
+## 0.3.0
+
+### Minor Changes
+
+- created component select and refactor button and text field
+
 ## 0.2.0
 
 ### Minor Changes
