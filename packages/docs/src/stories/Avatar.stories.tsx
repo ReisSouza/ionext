@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Avatar, AvatarProps } from '@ionext/core';
+import type { Meta, StoryObj } from '@storybook/react'
+import { Avatar, AvatarProps } from '@ionext/core'
 
 export default {
   title: 'Data display/Avatar',
@@ -22,19 +22,19 @@ export default {
       },
     },
   },
-} as Meta<AvatarProps>;
+} as Meta<AvatarProps>
 
-export const Primary: StoryObj<AvatarProps> = {};
+export const Primary: StoryObj<AvatarProps> = {}
 
 export const Secondary: StoryObj<AvatarProps> = {
   args: {
     variants: 'secondary',
     src: undefined,
   },
-};
+}
 
 export const WithImage: StoryObj<AvatarProps> = {
   args: {
     src: 'https://github.com/ReisSouza.png',
   },
-};
+}

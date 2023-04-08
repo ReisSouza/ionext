@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Box, MultiStep, MultiStepProps } from '@ionext/core';
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, MultiStep, MultiStepProps } from '@ionext/core'
 
 export default {
   title: 'Form/Multi Step',
@@ -11,20 +11,23 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Box as="label" css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+        >
           {Story()}
         </Box>
-      );
+      )
     },
   ],
-} as Meta<MultiStepProps>;
+} as Meta<MultiStepProps>
 
 export const Primary: StoryObj<MultiStepProps> = {
   args: {},
-};
+}
 
 export const Full: StoryObj<MultiStepProps> = {
   args: {
     currentStep: 4,
   },
-};
+}
